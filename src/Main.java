@@ -28,13 +28,14 @@ public class Main {
                     menu.dessertMenu();
                     break;
                 case 5:
+                    menu.cartList();
                     break;
                 case 6:
-                    System.out.println("진행중인 주문을 취소합니다.");
-                    return;
-                default:
-                    System.out.println("잘못된 번호입니다. 다시 선택해주세요.");
+                    menu.cancleOrder();
                     break;
+                default:
+                    System.out.println("잘못된 번호입니다.");
+                    return;
             }
         }
 }
